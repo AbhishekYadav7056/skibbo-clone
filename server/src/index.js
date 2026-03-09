@@ -328,7 +328,7 @@ function broadcastChat(io, room, player, text, msgType) {
   io.to(room.id).emit('chat_message', msg);
 }
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`Skribbl server running on port ${PORT}`);
 });
